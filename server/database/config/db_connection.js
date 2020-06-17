@@ -12,4 +12,7 @@ switch (process.env.NODE_ENV) {
 
 module.exports = new Pool({
   connectionString,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
